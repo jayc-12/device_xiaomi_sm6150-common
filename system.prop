@@ -43,3 +43,8 @@ ro.recovery.ui.margin_height=48
 
 # WiFi
 wifi.interface=wlan0
+
+ro.spark.device.name= Mi9t
+ro.spark.maintainer.username=spkal01
+ro.spark.maintainer=spkal01
+ro.spark.group.url=https://t.me/spkal01hub
