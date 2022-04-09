@@ -71,6 +71,8 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
     Return<bool> isUdfps(uint32_t sensorId) override;
     Return<void> onFingerDown(uint32_t x, uint32_t y, float minor, float major) override;
     Return<void> onFingerUp() override;
+	Return<void> onShowUdfpsOverlay() override;
+    Return<void> onHideUdfpsOverlay() override;
 
   private:
     static fingerprint_device_t* openHal();
@@ -89,6 +91,7 @@ struct BiometricsFingerprint : public IBiometricsFingerprint {
     android::base::unique_fd touch_fd_;
 #endif
 };
+
 
 }  // namespace implementation
 }  // namespace V2_3
